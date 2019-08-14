@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MNIST handwritten digits - ML</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Recognizing hand-written digits from MNIST dataset with Brain.js. Neural Networks live example.</h1>
+<p>
+  Draw a digit in the box below and click the "recognize" button.
+</p>
+<br/>
+<div id="container">
+  <canvas id="sketchpad" width="280" height="280">Sorry, your browser is not supported.</canvas>
+  <div id="result"></div>
+  <div style="clear: right"></div>
+</div>
+<button type="button" id="sketchClearButton">Clear</button>
+<button type="button" id="sketchRecogniseButton">Recognise</button>
+
+<br/>
+<!-- partial -->
+  <script src='https://cdn.rawgit.com/arguiot/f604513e7a85829e945aadbf294cc003/raw/e2f405e778465abcb2ea3edfa22bf40a3cbc554a/model.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
